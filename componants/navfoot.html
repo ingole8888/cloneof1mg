@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #navbox1{
+            margin: auto;
+            margin-top: -3px;
+            margin-bottom: 10px;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            text-align: center;
+        }
+        img{
+            height: 70%;
+        }
+        #navbox2{
+            margin: auto;
+            height: 50px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #navbox3{
+            margin: auto;
+            margin-left:8% ;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        #box{
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+        }
+        #box input{
+            padding: 5px 20px 5px 20px;
+        }
+        button{
+            margin: auto;
+            margin-left: -20px;
+            margin-top: 2px;
+            background-color: rgb(236, 111, 111);
+            border: 1px solid rgb(236, 111, 111);
+            color: white;
+        }
+        #footer{
+            margin: auto;
+            text-align: center;
+        }
+        #box1 , #box2{
+            margin: auto;
+            margin-left: 20%;
+            display: flex;
+            flex-direction: row;
+            gap:20%;
+            text-align: center;
+            
+        }
+        #box11{
+            text-align: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-bottom: 15Px;
+        }
+        #box3{
+            margin: auto;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            gap:10%; 
+        }
+        #box33{
+            display: flex;
+            flex-direction: row;
+        }
+        #box3 p{
+            color: gray;
+        }
+        #img{
+            height: 30px;
+            width: 30px;
+        }
+        #box34 img{
+            height: 50px;
+            width: 100px;
+        }
+        #box4{
+            margin: auto;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #box4a{
+            margin: auto;
+            width: 80%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #box4a img{
+            margin-top: 40px;
+            height: 100px;
+            width: 100px;
+        }
+        #box4a p{
+            color: gray;
+            font-size: 15px;
+        }
+        #box5{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin: auto;
+            margin-left: 40%;
+            margin-top: 15px;
+        }
+        #box5a img{
+            height: 100px;
+            width: 100px;
+        }
+        #box6{
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-bottom: 15;
+            gap: 80%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        #box7{
+            display: flex;
+            flex-direction: row;
+        }
+        #box7 img{
+           height: 20px;
+           width: 20px;
+        }
+        #box7a{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+      
+    </div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./navbar.js";
+    document.getElementById("navbar").innerHTML=navbar();
+
+    import footer from "./footer.js";
+    document.getElementById("footer").innerHTML=footer();
+</script>
