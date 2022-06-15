@@ -27,6 +27,7 @@ img{
 #navbox3{
     margin: auto;
     margin-left:8% ;
+    margin-bottom: 10px;
     text-align: center;
     display: flex;
     flex-direction: row;

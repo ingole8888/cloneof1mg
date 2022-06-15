@@ -6,17 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/commonstyle.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <style>
-
-
     </style>
 </head>
 <body>
     <div id="navbar">
         
     </div>
-
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade" id="myslide">
+      <img src="https://onemg.gumlet.io/image/upload/w_827,h_200,,a_ignore,q_auto,f_auto/v1655232581/jbqmda6b4enln5txglak.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade" id="myslide">
     
+      <img src="https://onemg.gumlet.io/image/upload/w_827,h_200,,…_auto,f_auto/v1654452372/qmrhvosx0qqcd9wh5ojf.png" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade" id="myslide">
+      
+      <img src="https://onemg.gumlet.io/image/upload/w_827,h_200,,…_auto,f_auto/v1641283756/kcdcsb5yrkpxok5bpm8y.png">
+      
+    </div>
+    <div class="mySlides fade" id="myslide">
+      
+      <img src=" https://onemg.gumlet.io/image/upload/w_827,h_200,,a_ignore,q_auto,f_auto/v1651561452/x7zr33pjnj4gcpqktn3q.png">
+      
+    </div>
+    <div class="mySlides fade" id="myslide">
+      
+      <img src="https://onemg.gumlet.io/image/upload/w_827,h_200,,a_ignore,q_auto,f_auto/v1651469437/zkm0v49j2nsuuo3vnlyw.png">
+      
+    </div>
+    <div class="mySlides fade" id="myslide">
+      
+      <img src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1650454451/pq9kpnup8oubjoihzhmw.jpg">
+      
+    </div>
+    
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
 
     <!-- footer -->
     <div id="footer">
@@ -24,10 +70,13 @@
     </div>
 </body>
 </html>
-<script type="module">
+<script type="module" >
     import navbar from "./componants/navbar.js";
     document.getElementById("navbar").innerHTML=navbar();
 
     import footer from "./componants/footer.js";
-    document.getElementById("footer").innerHTML=footer();
+    document.getElementById("footer").innerHTML=footer();   
+</script>
+<script src="./src/index.js" >
+
 </script>
