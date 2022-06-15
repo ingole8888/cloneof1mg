@@ -68,3 +68,108 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+#h1 h1{
+  text-align: center;
+  color: gray;
+  font-size: 25px;
+}
+#h1{
+  border-top: 1px solid gray;
+  border-bottom:1px solid gray;
+}
+#clodinary{
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 150px;
+  width: 90%;
+}
+#text{
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+#text p{
+  font-size: 18px;
+  color: #717171;
+  line-height: 25px;
+}
+/* corosal without image */
+.main-carousel1 {
+  width: 97%;
+  height: 14vw;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cell1 {
+  width: 23.5vw;
+  height: 14vw;
+  line-height: 10px;
+  text-align: center;
+  padding: 0 1.4vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.cell1 img{
+  height: 60px;
+  width: 100px;
+}
+
+#h33{
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-carousel11 {
+  width: 97%;
+  height: 14vw;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cell11 {
+  width: 18vw;
+  height: 14vw;
+  line-height: 10px;
+  text-align: center;
+  padding: 0 1.4vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.cell11 img{
+  margin-top: 10px;
+  height: 10vw;
+  width: 10vw;
+}
+/* with image */
+.main-carousel {
+  width: 97%;
+  height: 28vw;
+  margin: auto;
+}
+
+.cell {
+  width: 23.5vw;
+  height: 28vw;
+  padding: 0 1.4vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.cell img {
+  width: 100%;
+  height: 14vw;
+  object-fit: cover;
+}
+#full{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  gap: 70%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#full button{
+  margin-top: 20px;
+}
