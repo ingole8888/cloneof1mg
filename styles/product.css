@@ -1,0 +1,261 @@
+
+#main {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+#container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+    margin-left: 310px;
+    margin-top: 20px;
+}
+#container>div {
+    /* border: 1px solid red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    line-height: 19px;
+    /* width: 370px; */
+}
+
+
+
+#div1 {
+    display: flex;
+    gap: 25px;
+    /* margin-top: -20px; */
+
+}
+
+#strick {
+    text-decoration: line-through;
+}
+
+#p4 {
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+#div2 {
+    display: flex;
+    margin-left: 20px;
+
+}
+
+#p21 {
+    /* margin-left: -55px; */
+    margin-top: -1px;
+    font-weight: bold;
+    font-size: 20px
+}
+
+#price {
+    font-weight: bold;
+    font-size: 20px
+}
+
+#free {
+    color: rgb(27, 199, 226);
+    margin-left: 20px;
+}
+
+img {
+    height: 300px;
+    width: 90%;
+    margin: auto;
+    margin-left: 30px;
+}
+
+#div3 {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+#btn1 {
+    /* width: 380px; */
+    width: 50%;
+    padding: 5px;
+    background-color: #F0F1F7;
+    /* color: white; */
+    font-size: 16px;
+    border: 1px solid rgb(205, 201, 201);
+    font-weight: bold;
+}
+
+#btn2 {
+    /* width: 380px; */
+    width: 50%;
+    padding: 5px;
+    background-color: #414467;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid rgb(205, 201, 201);
+}
+
+#title {
+    margin-left: 20px;
+    font-size: 17px;
+    color: #2E2C38;
+}
+
+#title:hover {
+    color: #509bc1;
+    cursor: pointer;
+}
+
+#soldBy {
+    margin-left: 20px;
+}
+
+
+
+/* Fixed sidenav, full height */
+#sidenavv {
+
+    width: 281px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    margin-top: 200px;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: 0.2px solid rgb(199, 196, 196);
+}
+
+/* Style the sidenav links and the dropdown button */
+#sidenavv a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    color: #202340;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    line-height: 15px;
+
+}
+
+#sidenavv a {
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+
+#sidenavv a:hover,
+.dropdown-btn:hover {
+    color: #509bc1;
+}
+
+
+.main {
+    margin-left: 150px;
+    font-size: 16px;
+    padding: 0px 10px;
+
+}
+.dropdown-container {
+    display: none;
+
+    padding-left: 8px;
+}
+
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media only screen and (min-width:421px) and (max-width:780px) {
+    #container {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    
+
+    #container>div {
+        margin-left: -10px;
+    }
+
+
+}
+
+@media only screen and (min-width:80px) and (max-width:420px) {
+    #container {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+   
+
+    #container>div {
+        margin-left: -170px;
+    }
+}
+
+
+
+ @media only screen and (min-width:421px) and (max-width:780px) {
+    #connect1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #conn {
+        margin: 5px 0 0 0;
+    }
+
+
+    #connect2 {
+        display: none;
+    }
+
+    #images {
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width:80px) and (max-width:420px) {
+    #connect1 a {
+        display: none;
+    }
+
+    #conn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ac {
+        margin: 50px 0;
+        flex-direction: column;
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #image {
+        width: auto;
+        text-align: center;
+    }
+} 

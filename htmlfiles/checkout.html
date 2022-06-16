@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/commonstyle.css">
+    <link rel="stylesheet" href="../styles/checkout.css">
     
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="body">
+        <div id="line1">
+            <p id="line1a">Checkout</p>
+            <p id="line1b">Order total:0.00</p>
+        </div>
+        <div id="line2">
+            <button id="address">Address</button>
+            <button id="shipping">Shipping</button>
+            <button id="payment">Payment</button>
+        </div>
+        <hr>
+        <div id="bottom">
+            <div id="left">
+                <p id="line3">If you wish to pick up your order instead of having it shipped, select "pickup" on the
+                    following page.</p>
+                <div id="line4">
+                    <p id="line4a">Shipping Address</p>
+                    <a id="line4b" href="./shippingaddress.html">add address</a>
+                </div>
+                <p id="line5">Choose Address</p>
+                <!-- <div id="box2">
+
+        </div> -->
+            </div>
+            <div id="right">
+                <h2 id="rightl1">Order Summary</h2>
+                <hr id="right2">
+                <div id="right3">
+                    <p id="right3a">Order Total:</p>
+                    <p id="right3b">$0.00</p>
+                </div>
+                <div id="right4">
+                    <p id="right4a">Cashback earned on this order:</p>
+                    <p id="right4b">$0.29</p>
+                </div>
+                <hr id="right5">
+                <a href="./ordersummary.html"><button id="right6">Continue Checkout</button></a>
+                <p id="right7">By clicking continue, you agree to the 1mg.COM</p>
+                <p id="right8"><a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                <p id="right9">Let us know how we are doing <a href="#">Send Feedback</a>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        
+    </div>
 </body>
+
 </html>
+
+<script type="module">
+    import navbar from "../componants/navbar.js";
+document.getElementById("navbar").innerHTML = navbar()
+
+import footer from "../componants/footer.js";
+document.getElementById("footer").innerHTML = footer()
+    //  
+    let box222 = document.createElement('div');
+    box222.id = "box222";
+
+    let box333 = document.createElement('div');
+    box333.id = "box333";
+    let radio = document.createElement('input');
+    radio.type = "radio";
+    radio.id = "radio";
+    box333.append(radio);
+    let box444 = document.createElement('div');
+    box444.id = "box444";
+    let details = JSON.parse(localStorage.getItem('details'));
+    let first_name = details.first_name;
+    // console.log(first_name)
+    let last_name = details.last_name;
+    let p1 = document.createElement('p');
+    p1.innerText = first_name + ' ' + last_name;
+    let p2 = document.createElement('p');
+    p2.innerText = details.address;
+    let p3 = document.createElement('p');
+    p3.innerText = details.city + ', ' + details.state + ', ' + details.zip;
+    let box555 = document.createElement('div');
+    box555.id = 'box555';
+    let p4 = document.createElement('p');
+    p4.id = "p4";
+    p4.innerText = 'This address is indicated as a PO Box';
+    let p5 = document.createElement('a');
+    p5.innerText = "edit address";
+    p5.href = '#';
+    p5.id = "p5";
+    p5.addEventListener('click', open);
+    function open() {
+        window.location.href = "./shippingaddress.html"
+    }
+    box555.append(p4, p5);
+    box444.append(p1, p2, p3, box555);
+
+    box222.append(box333, box444);
+    document.getElementById('left').append(box222);
+
+    // document.getElementById('right6').addEventListener('click',ship);
+    // function ship(){
+    //     window.location.href="shipping.html";
+    // }
+    let total = JSON.parse(localStorage.getItem("CartTotal"));
+    document.getElementById('line1b').innerText = "Order total:" + total;
+    document.getElementById('right3b').innerText =  + total;
+</script>
